@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DentalDH", "DentalDH\DentalDH.vbproj", "{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA68F85A-2DDF-47B8-80D3-5B8D819AB8BB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupDentalV2", "SetupDentalV2\SetupDentalV2.vdproj", "{5471CA79-219E-41C2-A1F1-0743CB1B25D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5471CA79-219E-41C2-A1F1-0743CB1B25D2}.Debug|Any CPU.ActiveCfg = Debug
+		{5471CA79-219E-41C2-A1F1-0743CB1B25D2}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

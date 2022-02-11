@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3EDA7ED5-08D1-45C7-856A-50B4B9681AAF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DentalDH.My.MyApplication</StartupObject>
+    <RootNamespace>DentalDH</RootNamespace>
+    <AssemblyName>DentalDH</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DentalDH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DentalDH.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.3\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\AuxiliarEditarUsuarios.vb" />
+    <Compile Include="Clases\Conexion.vb" />
+    <Compile Include="Clases\itext.vb" />
+    <Compile Include="Clases\VariablesGlobales.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdeudos.Designer.vb">
+      <DependentUpon>frmAdeudos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdeudos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarAdeudo.Designer.vb">
+      <DependentUpon>frmAgregarAdeudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarAdeudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarHistorial.Designer.vb">
+      <DependentUpon>frmAgregarHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarPago.Designer.vb">
+      <DependentUpon>frmAgregarPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCambiarLogo.Designer.vb">
+      <DependentUpon>frmCambiarLogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCambiarLogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCitasSobrePaciente.Designer.vb">
+      <DependentUpon>frmCitasSobrePaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCitasSobrePaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarCita.Designer.vb">
+      <DependentUpon>frmEditarCita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarCita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarHistorial.Designer.vb">
+      <DependentUpon>frmEditarHistorial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarHistorial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarAdeudo.Designer.vb">
+      <DependentUpon>frmEliminarAdeudo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarAdeudo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEliminarPaciente.Designer.vb">
+      <DependentUpon>frmEliminarPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorialClinico.Designer.vb">
+      <DependentUpon>frmHistorialClinico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialClinico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.vb">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenuAdmin.Designer.vb">
+      <DependentUpon>frmMenuAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenuAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModificarPaciente.Designer.vb">
+      <DependentUpon>frmModificarPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmModificarPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarHistorialClinico.Designer.vb">
+      <DependentUpon>frmMostrarHistorialClinico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMostrarHistorialClinico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperacionesPacientesMenu.Designer.vb">
+      <DependentUpon>frmOperacionesPacientesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperacionesPacientesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperacionesSobreElPaciente.Designer.vb">
+      <DependentUpon>frmOperacionesSobreElPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperacionesSobreElPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPacientes.Designer.vb">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPagos.Designer.vb">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroPaciente.Designer.vb">
+      <DependentUpon>frmRegistroPaciente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroPaciente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistroPacientesMenu.Designer.vb">
+      <DependentUpon>frmRegistroPacientesMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegistroPacientesMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteDePagos.Designer.vb">
+      <DependentUpon>frmReporteDePagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteDePagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportesDeCitas.Designer.vb">
+      <DependentUpon>frmReportesDeCitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportesDeCitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmServicios.Designer.vb">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditarUsuarios.Designer.vb">
+      <DependentUpon>frmEditarUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditarUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdeudos.resx">
+      <DependentUpon>frmAdeudos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarAdeudo.resx">
+      <DependentUpon>frmAgregarAdeudo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarHistorial.resx">
+      <DependentUpon>frmAgregarHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPago.resx">
+      <DependentUpon>frmAgregarPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCambiarLogo.resx">
+      <DependentUpon>frmCambiarLogo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCitasSobrePaciente.resx">
+      <DependentUpon>frmCitasSobrePaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarCita.resx">
+      <DependentUpon>frmEditarCita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarHistorial.resx">
+      <DependentUpon>frmEditarHistorial.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarAdeudo.resx">
+      <DependentUpon>frmEliminarAdeudo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEliminarPaciente.resx">
+      <DependentUpon>frmEliminarPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorialClinico.resx">
+      <DependentUpon>frmHistorialClinico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenuAdmin.resx">
+      <DependentUpon>frmMenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModificarPaciente.resx">
+      <DependentUpon>frmModificarPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarHistorialClinico.resx">
+      <DependentUpon>frmMostrarHistorialClinico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperacionesPacientesMenu.resx">
+      <DependentUpon>frmOperacionesPacientesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperacionesSobreElPaciente.resx">
+      <DependentUpon>frmOperacionesSobreElPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPagos.resx">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroPaciente.resx">
+      <DependentUpon>frmRegistroPaciente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistroPacientesMenu.resx">
+      <DependentUpon>frmRegistroPacientesMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteDePagos.resx">
+      <DependentUpon>frmReporteDePagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportesDeCitas.resx">
+      <DependentUpon>frmReportesDeCitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmServicios.resx">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditarUsuarios.resx">
+      <DependentUpon>frmEditarUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icono.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="Resources\agendarCita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icono.ico" />
+    <Content Include="Resources\icono.png" />
+    <Content Include="Resources\reporteCitas.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
